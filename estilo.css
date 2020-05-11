@@ -1,0 +1,31 @@
+body{
+    background-color: #992278;
+    color: #ffffff;
+    font-family: Arial;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+a{
+    padding: 5px;
+    background-color: indigo;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:hover{
+    font-size: 20px;
+}
+
+.web-title,
+.web-subtitle{
+    text-align: center;
+}
+
+.web-subtitle{
+    font-style: italic;
+}
