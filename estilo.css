@@ -1,3 +1,9 @@
+/*
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Kelly Slab', cursive;
+    font-family: 'Roboto', sans-serif;
+*/
+
 *{
     margin: 0;
     padding: 0;
@@ -6,9 +12,25 @@
 
 body{
     background-color: #992278;
-    color: #ffffff;
+    color: #fafafa;
     font-family: Arial;
     font-size: 16px;
+}
+
+@media(min-width: 400px){
+    body{
+        font-size: 18px;
+    }
+}
+@media(min-width: 800px){
+    body{
+        font-size: 20px;
+    }
+}
+@media(min-width: 1200px){
+    body{
+        font-size: 22px;
+    }
 }
 
 header{
@@ -20,7 +42,7 @@ header{
 }
 
 header h1, header h2{
-    margin: 25px;
+    margin: 0.25em;
 }
 
 .menu{
@@ -37,6 +59,7 @@ header h1, header h2{
 
 .menu li{
     list-style: none;
+    font-family: 'Roboto', sans-serif;
 }
 
 .menu a{
@@ -54,24 +77,59 @@ header h1, header h2{
 .web-title,
 .web-subtitle{
     text-align: center;
+    font-family: 'Abril Fatface', cursive;
 }
 
 .web-subtitle{
     font-style: italic;
 }
 
-@media(min-width: 400px){
-    body{
-        font-size: 18px;
-    }
+/*Aula 3*/
+
+.projetos{
+    padding: 2em;
+    height: 95vh;
 }
-@media(min-width: 800px){
-    body{
-        font-size: 20px;
-    }
+
+.projetos h2{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 1.5em;
+    font-family: 'Kelly Slab', cursive;
 }
-@media(min-width: 1200px){
-    body{
-        font-size: 22px;
-    }
+
+.projetos .grid{
+    display: grid;
+    gap: 2em;
+}
+
+@media(min-width: 480px){
+    .projetos .grid {
+        grid-template-columns: 220px 220px;
+        align-content: center;
+        justify-content: space-around;
+      }
+}
+
+.projetos figure{
+    text-align: center;
+}
+.projetos figcaption{
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.projetos a{
+    text-decoration: none;
+}
+
+.projetos a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.imagem-projetos{
+    height: 110.5px;
+    width: 200px;
+    object-fit: cover;
 }
