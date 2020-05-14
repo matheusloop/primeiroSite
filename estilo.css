@@ -45,11 +45,16 @@ header h1, header h2{
     margin: 0.25em;
 }
 
+.titulos-sessao{
+    padding-top: 15px;
+}
+
 .menu{
     background-color: indigo;
     position: fixed;
     top: 0;
     width: 100vw;
+    z-index: 1;
 }
 
 .menu ul{
@@ -67,12 +72,33 @@ header h1, header h2{
     padding: 10px 30px;
     color: rgb(255, 255, 255);
     text-decoration: none;
+    transition: background-color 500ms;
 }
 
+.menu a:active,
 .menu a:hover{
     background-color: lightseagreen;
     text-decoration: underline;
 }
+
+/*
+.logo {
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+    animation: 1s ease 2s animacaoTitulo forwards;
+  }
+  
+  @keyframes animacaoTitulo {
+    from {
+      transform: scale(0.2) translateY(50vh);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1) translateY(0);
+      opacity: 1;
+    }
+}
+*/
 
 .web-title,
 .web-subtitle{
@@ -84,14 +110,67 @@ header h1, header h2{
     font-style: italic;
 }
 
+/*---------Inicio do botão flutuante---------*/
+.inicio{
+    position: fixed;
+    top: 90vh;
+    left: 80vw;
+}
+
+@media(max-height: 550px){
+    .inicio{
+        top: 85vh;
+    }
+}
+
+@media(min-width: 360px){
+    .inicio{
+        left: 85vw;
+    }
+}
+
+@media(min-width: 568px){
+    .inicio{
+        left: 90vw;
+    }
+}
+
+.inicio a{
+    font-size: 18px;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+
+    /*padding*/
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 13px;
+    padding-bottom: 7px;
+
+    background-color:rgba(75, 0, 130, 0.5) ;
+    border-radius: 50%;
+    display: block;
+    text-decoration: none;
+    color: white;
+    transition: text-shadow 500ms, transform 500ms, box-shadow 500ms;
+}
+
+.inicio a:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(75, 0, 130, 1);
+    text-shadow: 0px 0px 10px white;
+}
+/*---------Fim do botão flutuante---------*/
+
 /*Aula 3*/
 
 .projetos{
     padding: 2em;
-    height: 95vh;
+    min-height: 95vh;
 }
 
-.projetos h2{
+.projetos h2,
+.contato h2{
     text-align: center;
     text-decoration: underline;
     margin-bottom: 1.5em;
@@ -132,4 +211,47 @@ header h1, header h2{
     height: 110.5px;
     width: 200px;
     object-fit: cover;
+    transition: transform 500ms;
 }
+
+.imagem-projetos:hover{
+    transform: scale(1.2);
+}
+
+
+/*Aula 4*/
+.contato{
+    padding: 2em;
+    min-height: 100vh;
+}
+
+.icones{
+    display: grid;
+    gap: 3em;
+    justify-content: space-around;
+}   
+@media (min-width: 320px) {
+    .icones{
+        grid-template-columns: 80px 80px
+    }
+}
+
+@media (min-width: 500px) {
+    .icones{
+        grid-template-columns: 80px 80px 80px 80px;
+    }
+}
+
+.contato a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 3em;
+    transition: transform 500ms, text-shadow 500ms;
+}
+
+.contato a:hover{
+    transform: scale(1.2);
+    text-shadow: 0px 0px 10px white;
+}
+

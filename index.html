@@ -9,41 +9,69 @@
 <link rel="stylesheet" href="estilo.css">
 <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kelly+Slab&family=Roboto&display=swap" rel="stylesheet">
 
+<script src="https://kit.fontawesome.com/6d6952c5be.js" crossorigin="anonymous"></script>
+
 <body>
 
-    <header class="principal">
+    <header class="principal" id="inicio">
         <nav class="menu">
             <ul>
-                <li><a href="#">Sobre </a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Curriculo</a></li>
+                <li><a href="#sobre">Sobre </a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
 
             </ul>
         </nav>
         <div class="logo">
-            <h1 class="web-title">MatheusLoop</h1>
+            <h1 class="web-title">Matheus Lucas</h1>
             <h2 class="web-subtitle">Programador Junior</h2>   
         </div>
     </header>
 
-    <section class="projetos">
-        <h2>Projetos:</h2>
+    <div class="inicio">
+        <a href="#inicio"><i class="fas fa-home"></i></a>
+    </div>
+
+    <section class="projetos" id="projetos">
+        <h2 class="titulos-sessao">Projetos:</h2>
+
         <div class="grid">
             <figure>
-                <a href="https://codepen.io/math_eus16">
+                <a target="_blank" href="https://codepen.io/math_eus16">
                     <img class="imagem-projetos" src="./imgs/projetos_codepen.png" alt="Projetos no CodePen">
                     <figcaption>Projetos no CodePen</figcaption>
                     <figcaption>@math_eus16</figcaption>
                 </a>
             </figure>
             <figure>
-                <a class="link-github" href="https://github.com/matheusloop">
+                <a target="_blank" href="https://github.com/matheusloop">
                     <img class="imagem-projetos" src="./imgs/projetos_github.png" alt="Projetos no GitHub">
                     <figcaption>Projetos no GitHub</figcaption>
                     <figcaption>@matheusloop</figcaption>
                 </a>
             </figure>
         </div>
+
+    </section>
+
+    <section class="contato" id="contato">
+        <h2 class="titulos-sessao">Contato:</h2>
+
+        <div class="grid icones">
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100011278361814&__tn__=lC-R&eid=ARD1RNMifC-h5-3SMjUUfkzPCi9F-4aRIAS9Gs3hUrH5FNoHhrGk3nTTfLMEShg_vOgFYzAWdfBvPvaf&hc_ref=ARQ0jn_sfhvqk4ju7EcLZNcUMUM-e5ZbUtunrlEnNMKrPdrK2nqhoYa3BtaBB6GIV8s&ref=nf_target&__xts__%5B0%5D=68.ARCL3cUUilIF-6x-caTrQcT-7WzN7HYiytcURN5j9UUspWiPsXqvkkvBZ1Vat7rf1DNFL_bgSabbqkKID2H4LhnDOT0G0y6Oros81Ttc-1-JFeKl10AENI42UStD5o9gzv0N3nbsPpa03jWFQPkv_iVlDCEGCq2AxIJeg1ZuopxCAwtHp6xWtnyegSRaoSJwUJQKhm47jXy_4N42RygvnlocUt_xK8xIWDKy42AF4mzrEbl_QQmT_QlvD2MwSWZFSLg0Fu9SQWqSA-UWfQPdD90DCrjwWzJsBGoB">
+				<i class="fab fa-facebook"></i>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/matheus.lucas.tv">
+				<i class="fab fa-instagram"></i>
+            </a>
+            <a target="_blank" href="https://twitter.com/Matheus_LucasOP">
+				<i class="fab fa-twitter"></i>
+            </a>
+            <a target="_blank" href="https://linkedin.com/">
+				<i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+
 
     </section>
 
