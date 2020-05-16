@@ -50,7 +50,7 @@ header h1, header h2{
 }
 
 .menu{
-    background-color: indigo;
+    background-color: #4b0082;
     position: fixed;
     top: 0;
     width: 100vw;
@@ -113,26 +113,8 @@ header h1, header h2{
 /*---------Inicio do botão flutuante---------*/
 .inicio{
     position: fixed;
-    top: 90vh;
-    left: 80vw;
-}
-
-@media(max-height: 550px){
-    .inicio{
-        top: 85vh;
-    }
-}
-
-@media(min-width: 360px){
-    .inicio{
-        left: 85vw;
-    }
-}
-
-@media(min-width: 568px){
-    .inicio{
-        left: 90vw;
-    }
+    bottom: 15px;
+    right: 20px;
 }
 
 .inicio a{
@@ -157,25 +139,83 @@ header h1, header h2{
 
 .inicio a:hover{
     transform: scale(1.1);
-    box-shadow: 0px 0px 10px rgba(75, 0, 130, 1);
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
     text-shadow: 0px 0px 10px white;
 }
 /*---------Fim do botão flutuante---------*/
 
-/*Aula 3*/
-
+.sobre,
+.contato,
 .projetos{
     padding: 2em;
     min-height: 95vh;
 }
 
-.projetos h2,
-.contato h2{
+/*subtitulos das sessões*/
+.sobre h2,
+.contato h2,
+.projetos h2{
     text-align: center;
     text-decoration: underline;
     margin-bottom: 1.5em;
     font-family: 'Kelly Slab', cursive;
 }
+
+@media(min-width: 1200px){
+    .conteiner{
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.sobre .avatar img{
+    height: auto;
+    width: 300px;
+    margin-bottom: 1em;
+}
+
+@media(max-width: 414px){
+    .sobre .avatar{
+        text-align: center;
+    }
+    .sobre .avatar img{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+
+
+@media(min-width: 414px){
+    .sobre .avatar img{
+        margin-left: 1em;
+        float: right;
+        clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+        transition: transform 500ms, box-shadow 500ms;
+    }
+    .sobre .avatar img:hover{
+        transform: scale(1.025)
+    }
+}
+
+.sobre p{
+    margin-bottom: 1em;
+    text-indent: 2em;
+    text-align: justify;
+}
+
+.sobre p a{
+    text-decoration: none;
+    color: rgb(134, 218, 218);
+}
+
+.sobre p a:hover{
+    font-size: 1.2em;
+}
+
+/*Aula 3*/
 
 .projetos .grid{
     display: grid;
@@ -220,10 +260,6 @@ header h1, header h2{
 
 
 /*Aula 4*/
-.contato{
-    padding: 2em;
-    min-height: 100vh;
-}
 
 .icones{
     display: grid;
